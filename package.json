@@ -1,18 +1,23 @@
 {
-  "name": "backendgroupapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "vue-3-grud",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "mysql2": "^3.10.1",
-    "sequelize": "^6.37.3"
+    "axios": "^1.7.2",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.8"
   }
 }
