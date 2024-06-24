@@ -50,7 +50,7 @@ exports.signin = (req, res) => {
         return res.status(404).send({ message: "User Not found." });
       }
 
-      var passwordIsValid = bcrypt.compareSync(
+      let passwordIsValid = bcrypt.compareSync(
         req.body.password,
         user.password
       );
@@ -68,7 +68,7 @@ exports.signin = (req, res) => {
         expiresIn: 86400, 
       });
 
-      var authorities = [];
+      let authorities = [];
       user.getRoles().then((roles) => {
         for (let i = 0; i < roles.length; i++) {
           authorities.push("ROLE_" + roles[i].name.toUpperCase());
