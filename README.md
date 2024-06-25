@@ -28,12 +28,13 @@ package-lock.json
 package.json
 server.js
 ```
- 
-– db.config.js exports configuring parameters for MySQL connection & Sequelize.
-– Express web server in server.js where we configure CORS, initialize & run Express REST APIs.
-– Next, we add configuration for MySQL database in models/index.js, create Sequelize data model in models/tutorial.model.js.
-– Tutorial controller in controllers.
-– Routes for handling all CRUD operations (including custom finder) in tutorial.routes.js
+
+- db.config.js exports configuring parameters for MySQL connection & Sequelize.
+- Express web server in server.js where we configure CORS, initialize & run Express REST APIs.
+- Next, we add configuration for MySQL database in models/index.js, create Sequelize data model in models/tutorial.model.js.
+- Tutorial controller in controllers.
+- Routes for handling all CRUD operations (including custom finder) in tutorial.routes.js
+
 ## Run Server
 Run with command:
 ```
